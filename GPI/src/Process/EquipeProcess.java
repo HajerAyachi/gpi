@@ -43,7 +43,6 @@ public class EquipeProcess {
 		c= new Coach() ;
 	}
 
-
 	public void String() {
 		System.out.println( "EquipeProcess [keeper=" + keeper + ", forw=" + forw + ", def=" + def + ", c=" + c + "]");
 		System.out.println(keeper.size()+"--------------"+forw.size()+"---"+def.size()+"---"+c.getSkill());
