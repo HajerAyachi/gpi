@@ -5,10 +5,10 @@ public class Forward extends Player {
 	private int drible;
 	
 	public Forward(int speed,int shooting_skills,int exhaust
-			,boolean wounded,boolean substitute ,int perfect_shot,int drible) {
+			,boolean wounded,boolean substitute ,int perfect_shoot,int drible) {
 		super(speed,shooting_skills,exhaust,wounded,substitute);
-		perfect_shoot=this.perfect_shoot;
-		drible=this.drible;
+		this.perfect_shoot=perfect_shoot;
+		this.drible=drible;
 	}
 
 	public int getPerfect_shoot() {

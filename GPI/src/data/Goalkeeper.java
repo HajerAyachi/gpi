@@ -6,10 +6,11 @@ public class Goalkeeper extends Player {
 	
 	
 	public Goalkeeper(int speed,int shooting_skills,int exhaust
-			,boolean wounded,boolean substitute,int plunge,int position) {
+			,boolean wounded,boolean substitute,int plunge,int position) 
+	{
 		super(speed,shooting_skills,exhaust,wounded,substitute);
-		plunge=this.plunge;
-		position=this.position;
+		this.plunge=plunge;
+		this.position=position;
 	}
 
 

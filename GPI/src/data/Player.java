@@ -1,6 +1,55 @@
 package data;
 
+import java.util.ArrayList;
+
 public class Player {
+	private int speed;
+	private int shooting_skills;
+	private int exhaust;
+	private boolean wounded;
+	private boolean substitute;
+	private String name;
+	
+	public Player(int speed,int shooting_skills,int exhaust
+			,boolean wounded,boolean substitute) {
+		
+		
+		ArrayList<String> name= new ArrayList<String>();
+		name.add("Neymar");
+		name.add("de jong");
+		name.add("Pavare");
+		name.add("Dimitri");
+		name.add("Reus");
+		name.add("Cazimiro");
+		name.add("Vidal");
+		
+		
+		
+		this.name=name.get((int)(Math.random() * (name.size() - 0)) );
+		this.speed=speed;
+		this.shooting_skills=shooting_skills;
+		this.exhaust=0;
+		this.wounded=wounded;
+		this.substitute=substitute;
+	}
+	
+	
+	
+	
+	public String getName() {
+		return name;
+	}
+
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+
 	public int getSpeed() {
 		return speed;
 	}
@@ -39,21 +88,6 @@ public class Player {
 
 	public void setSubstitute(boolean substitute) {
 		this.substitute = substitute;
-	}
-
-	private int speed;
-	private int shooting_skills;
-	private int exhaust;
-	private boolean wounded;
-	private boolean substitute;
-	
-	public Player(int speed,int shooting_skills,int exhaust
-			,boolean wounded,boolean substitute) {
-		speed=50;
-		shooting_skills=50;
-		exhaust=0;
-		wounded=false;
-		substitute=false;
 	}
 	
 }
